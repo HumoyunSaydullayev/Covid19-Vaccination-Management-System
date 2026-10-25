@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminDashboardProfileController">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <Label layoutX="538.0" layoutY="46.0" text="My profile" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="160.0" text="Name surname " textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="210.0" text="Contact info:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="260.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="310.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fish" layoutX="739.0" layoutY="160.0" text="Name surname " textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="contact" layoutX="739.0" layoutY="210.0" text="Contact info:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="739.0" layoutY="260.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="password" layoutX="739.0" layoutY="310.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="change_password" layoutX="510.0" layoutY="456.0" mnemonicParsing="false" onAction="#change_password" prefHeight="50.0" prefWidth="186.0" styleClass="admin_button" stylesheets="@../style.css" text="Change Password" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="597.0" layoutY="160.0" orientation="VERTICAL" prefHeight="180.0" style="-fx-background-color: #fff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Separator>
+      <Pane fx:id="change_pane" layoutX="159.0" layoutY="600.0" prefHeight="338.0" prefWidth="888.0" style="-fx-background-color: #2F2B43;" styleClass="change_password" stylesheets="@../style.css" visible="false">
+         <children>
+            <TextField fx:id="current_password" editable="false" layoutX="332.0" layoutY="51.0" promptText="Current password" styleClass="text-field-edit" stylesheets="@../style.css">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="new_password" layoutX="41.0" layoutY="134.0" promptText="New password" styleClass="text-field-edit" stylesheets="@../style.css">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="repeat_new_password" layoutX="620.0" layoutY="134.0" promptText="Repeat new password" styleClass="text-field-edit" stylesheets="@../style.css">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="351.0" layoutY="86.0" text="Current password" textFill="#ffffffa2">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="save_password" layoutX="351.0" layoutY="210.0" mnemonicParsing="false" onAction="#save_password" prefHeight="50.0" prefWidth="186.0" styleClass="login_button" stylesheets="@../style.css" text="Save Password" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5803921818733215" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="error" alignment="CENTER" layoutX="202.0" layoutY="180.0" prefHeight="20.0" prefWidth="484.0" textAlignment="CENTER" textFill="#fa2c56">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="clear" layoutX="575.0" layoutY="210.0" mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="186.0" style="-fx-border-color: linear-gradient(to right, #ffc107, #ffdd57);" styleClass="vaccines_button" stylesheets="@../style.css" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5803921818733215" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="cancel" layoutX="128.0" layoutY="210.0" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="186.0" style="-fx-border-color: linear-gradient(to right, #dc3545, #FA2C56);" styleClass="vaccines_button" stylesheets="@../style.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5803921818733215" green="0.019607843831181526" blue="0.019607843831181526" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

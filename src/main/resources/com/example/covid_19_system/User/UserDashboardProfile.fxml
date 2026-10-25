@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.UserDashboardProfileController">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <Label layoutX="538.0" layoutY="46.0" text="My profile" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="160.0" text="Name surname " textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="110.0" text="Passport:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="210.0" text="Birth date:" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="260.0" text="Vaccination Status" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fish" layoutX="739.0" layoutY="160.0" text="Name surname " textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="passport" layoutX="739.0" layoutY="110.0" text="passport" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="birth_date" layoutX="739.0" layoutY="210.0" text="birth_date" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="vaccinationstatus" layoutX="739.0" layoutY="260.0" text="vaccinationStatus" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Certificate" layoutX="510.0" layoutY="456.0" mnemonicParsing="false" onAction="#Certificate" prefHeight="50.0" prefWidth="186.0" styleClass="admin_button" stylesheets="@../style.css" text="Certificate" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="597.0" layoutY="110.0" orientation="VERTICAL" prefHeight="240.0" style="-fx-background-color: #fff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Separator>
+      <Label layoutX="339.0" layoutY="310.0" text="Vaccine type" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="vaccinetype" layoutX="739.0" layoutY="310.0" text="Chuvalchang shorva" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="353.0" text="Number of vaccination" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="394.0" text="Last vaccination" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Number_of_vaccination" layoutX="739.0" layoutY="353.0" text="Number of vaccination" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Last_vaccination" layoutX="739.0" layoutY="394.0" text="Last vaccination" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

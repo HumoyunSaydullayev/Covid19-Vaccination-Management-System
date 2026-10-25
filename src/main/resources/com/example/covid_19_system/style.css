@@ -1,0 +1,338 @@
+/* Sidebar Button Style */
+.admin_side_manage_dashboard{
+    -fx-background-color: #353A56;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.admin_inner_pane{
+    -fx-background-color:#4f79ff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    /*-fx-border-color: #748CF1;*/
+    -fx-border-color: rgba(255,255,255,0.2);
+}
+.admin_most_inner_pane{
+    /*-fx-background-color: rgba(255,255,255,0.2);*/
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-border-width: 0.5px;
+}
+.admin_most_inner_pane:hover{
+    -fx-scale-x:1.05;
+    -fx-scale-y:1.05;
+}
+.admin_most_inner_pane:pressed{
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-scale-x:1;
+    -fx-scale-y:1;
+}
+.admin_button{
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color:  rgba(0, 0, 0, 0.5);
+}
+.admin_button:hover {
+    -fx-background-color:rgba(0, 0, 0, 0.5);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+.admin_button:pressed{
+    -fx-background-color:#2F2B43;/*transparent;*/
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+.name_of_app{
+    -fx-background-color : rgba(57, 51, 81, 0.5);
+    -fx-background-radius :  20;
+}
+.change_admin_button{
+    -fx-background-color:  rgba(0, 0, 0, 0.5);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+
+
+.login_page{
+    -fx-background-color : rgba(57, 51, 81, 0.7);
+    -fx-background-radius :  20;
+}
+
+
+.login_check {
+  -fx-border-color:  #FA2C56;
+  -fx-border-radius: 10px;
+  -fx-background-radius: 10px;
+  -fx-border-width:  1.5px;
+  -fx-background-color: transparent;
+  -fx-text-fill:white;
+}
+.text-field {
+  -fx-border-color:  #FA2C56;
+  -fx-border-width:  0 0 0 1.5;
+  -fx-background-color: transparent;
+  -fx-text-fill:white;
+}
+
+.login_button{
+    -fx-background-color : #393351;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color:  rgba(0, 0, 0, 0.5);
+}
+
+.login_button:hover{
+    -fx-background-color : #393351;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+
+.login_button:pressed{
+    -fx-background-color : #393351;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color:  rgba(0, 0, 0, 0.5);
+}
+
+.text-field-edit {
+  -fx-border-color:  #FA2C56;
+  -fx-border-width:  0 0 1.5 0;
+  -fx-border-radius:  5 ;
+  -fx-background-color: transparent;
+  -fx-text-fill:white;
+}
+
+
+
+/*Table view */
+.table-view {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff); /* Orqa fon gradient */
+    -fx-font-family: "Century Gothic"; /* Yozuv shrift turi */
+    -fx-font-size: 16px; /* Yozuv shrift hajmi */
+    -fx-text-fill: white; /* Yozuvlar rangi oppoq */
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+}
+
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+
+.column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: red; /* Ustunlar chegara rangi qizil */
+    -fx-border-width: 0 1px 0 0; /* O'ng tomonga chegarani qo'shish */
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold; /* Sarlavha yozuvlari qalin */
+    -fx-text-fill: white; /* Sarlavha yozuvlari oq rangda */
+    -fx-font-family: "Century Gothic"; /* Sarlavha shrift turi */
+}
+
+.table-view .column-header .button {
+    -fx-background-color: transparent; /* Tugmalar foni ko'rinmas */
+    -fx-text-fill: white; /* Tugma yozuvlari oq rangda */
+    -fx-font-family: "Century Gothic"; /* Tugma yozuvlari shrift turi */
+    -fx-cursor: hand; /* Tugmalar ustida qo'l ko'rsatkichi */
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1); /* Sichqoncha olib borilganda shaffof qora fon */
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Belgilanganda qora rangning 50% shaffofligi */
+}
+
+.table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: white; /* Belgilanganda ham yozuv oq rangda qoladi */
+}
+
+.table-row-cell {
+    -fx-border-color: red; /* Har bir ustun oralig'iga qizil chegara */
+    -fx-border-width: 0 1px 0 0; /* Chegaraning faqat o'ng tomonda bo'lishi */
+}
+
+.table-cell {
+    -fx-border-color: red; /* Chegara rangi qizil */
+    -fx-border-width: 0 1px 0 0; /* O'ng tomonga chegarani qo'shish */
+    -fx-alignment: center-left; /* Yozuvlarni chapga joylash */
+}
+
+.vaccines_button{
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 15px;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to right, #28a745, #22ff00);
+}
+.change_password{
+     -fx-border-color: rgba(255,255,255,0.6);
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-color: linear-gradient(to right,#FA2C56,#748CF1);
+}
+
+
+/* Diagram sarlavhasi */
+.chart-title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* Aylanadagi bo‘laklar ranglari */
+.chart-color-0 {
+    -fx-pie-color: #4CAF50; /* Yashil */
+}
+
+.chart-color-1 {
+    -fx-pie-color: #2196F3; /* Ko‘k */
+}
+
+.chart-color-2 {
+    -fx-pie-color: #FFC107; /* Sariq */
+}
+
+.chart-color-3 {
+    -fx-pie-color: #F44336; /* Qizil */
+}
+
+/* Bo‘laklarga tegishli matnlar (label) */
+.chart-pie-label {
+    -fx-font-size: 14px;
+    -fx-fill: #000000; /* Matn rangini qora qilish */
+    -fx-font-weight: normal;
+}
+
+/* Umumiy diagrammayi moslashtirish */
+.chart {
+    -fx-padding: 10;
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: rgba(0, 0, 0, 0.2);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+
+
+
+/* Umumiy comboBox sozlamalari */
+.combo-box {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-color: #FA2C56;
+    -fx-border-width: 1;
+    -fx-padding: 4;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", Roboto, sans-serif;
+    -fx-text-fill: #333333;
+}
+
+/* Hover paytida comboBox o'zgarishlari */
+.combo-box:hover {
+    -fx-border-color: #748CF1;
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Drop-down ichidagi elementlar (list-cell) */
+.combo-box .list-cell {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", Roboto, sans-serif;
+    -fx-padding: 4;
+    -fx-background-radius: 4;
+}
+
+/* Hover qilinganda drop-down elementlari */
+.combo-box .list-cell:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Tanlangan element */
+.combo-box .list-cell:selected {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-text-fill: #FFFFFF;
+}
+
+/* ComboBox-dagi o'q (arrow) ico-ni o'zgartirish */
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0 5 0 5;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #666666; /* O'q rangi */
+    -fx-shape: "M0,0 L0,2 L2,0 Z"; /* Uchburchak shakl */
+    -fx-scale-x: 0.6;
+    -fx-scale-y: 0.6;
+}
+
+.combo-box:hover .arrow-button .arrow {
+    -fx-background-color: #333333;
+}
+
+/* Ochilganda comboBox popup maydoni */
+.combo-box-popup {
+    -fx-background-color: rgba(0,0,0,0.2);
+    -fx-border-color: #FA2C56;
+    -fx-border-width: 1;
+    -fx-background-radius: 4;
+    -fx-padding: 4;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8,0,0,2);
+}
+
+/* Fokusda bo'lganda comboBox chegarasi */
+.combo-box:focused {
+    -fx-border-color: #2196F3;
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Matnning ichki polizi */
+.combo-box .text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 2;
+    -fx-text-fill: #333333;
+}
+
+

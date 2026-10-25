@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.covid_19_system.StaticsController">
+   <children>
+      <ComboBox fx:id="levelSelector" layoutX="320.0" layoutY="20.0" prefHeight="36.0" prefWidth="133.0" styleClass="combo-box" stylesheets="@style.css" />
+      <PieChart fx:id="statisticchart" layoutX="7.0" layoutY="93.0" prefHeight="506.0" prefWidth="506.0" stylesheets="@style.css" />
+      <TableView fx:id="RatingTable" layoutX="515.0" layoutY="14.0" prefHeight="300.0" prefWidth="670.0" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="number" prefWidth="50.0" text="№" />
+            <TableColumn fx:id="Polyclinic_name" minWidth="8.800018310546875" prefWidth="250.0" text="Polyclinic name" />
+            <TableColumn fx:id="recover_of_patients" prefWidth="190.0" text="Recover patients" />
+            <TableColumn fx:id="recovering_of_patients" prefWidth="170.0" text="Recovering patients" />
+         </columns>
+      </TableView>
+      <TableView fx:id="vaccinerating" layoutX="523.0" layoutY="358.0" prefHeight="200.0" prefWidth="670.0" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="vaccine_name" minWidth="8.800018310546875" prefWidth="250.0" text="Vaccine name" />
+            <TableColumn fx:id="number_used" prefWidth="190.0" text="Number of used" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

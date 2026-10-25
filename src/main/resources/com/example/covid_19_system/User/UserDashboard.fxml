@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1550.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.UserDashboardController">
+    <children>
+        <Pane layoutX="-264.0" layoutY="40.0" prefHeight="240.0" prefWidth="424.0" rotate="50.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+        <AnchorPane fx:id="admin_side_manage_dashboard" layoutY="200.0" prefHeight="600.0" prefWidth="300.0" styleClass="admin_side_manage_dashboard" stylesheets="@../style.css">
+            <children>
+                <Pane fx:id="inner_pane" layoutX="25.0" layoutY="25.0" prefHeight="70.0" prefWidth="250.0" styleClass="admin_inner_pane" stylesheets="@../style.css">
+                    <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../images/profile.png" />
+                            </image>
+                        </ImageView>
+                        <Pane fx:id="most_inner_pane" layoutX="186.0" layoutY="10.0" prefHeight="50.0" prefWidth="50.0" styleClass="admin_most_inner_pane" stylesheets="@../style.css">
+                            <children>
+                                <ImageView fx:id="admin_menu" fitHeight="35.0" fitWidth="35.0" layoutX="8.0" layoutY="7.0" onMouseClicked="#UserMenu" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/close.png" />
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </ImageView>
+                            </children>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Pane>
+                    </children>
+                </Pane>
+                <Button fx:id="user_my_profile" layoutX="25.0" layoutY="135.0" mnemonicParsing="false" onAction="#MyProfile" prefHeight="70.0" prefWidth="250.0" styleClass="admin_button" stylesheets="@../style.css" text="Profile" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="my_profile_image">
+                            <image>
+                                <Image url="@../../../../images/user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="user_vacsines" layoutX="25.0" layoutY="255.0" mnemonicParsing="false" onAction="#Vacsines" prefHeight="70.0" prefWidth="250.0" styleClass="admin_button" stylesheets="@../style.css" text="Vaccines" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="my_profile_image">
+                            <image>
+                                <Image url="@../../../../images/vaccine.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="user_staff" layoutX="25.0" layoutY="375.0" mnemonicParsing="false" onAction="#user_staff" prefHeight="70.0" prefWidth="250.0" styleClass="admin_button" stylesheets="@../style.css" text="Doctors" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="my_profile_image">
+                            <image>
+                                <Image url="@../../../../images/administrator.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="user_statistics" alignment="CENTER" layoutX="25.0" layoutY="495.0" mnemonicParsing="false" onAction="#statistics" prefHeight="70.0" prefWidth="250.0" styleClass="admin_button" stylesheets="@../style.css" text="Statistics" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../images/statistics.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Pane fx:id="line_profile" layoutX="295.0" layoutY="135.0" prefHeight="75.0" prefWidth="5.0" style="-fx-background-color: #4f79ff; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+                    <effect>
+                        <DropShadow />
+                    </effect></Pane>
+                <Pane fx:id="line_vacsines" layoutX="295.0" layoutY="255.0" prefHeight="75.0" prefWidth="5.0" style="-fx-background-color: #4f79ff; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+                    <effect>
+                        <DropShadow />
+                    </effect></Pane>
+                <Pane fx:id="line_injections" layoutX="295.0" layoutY="375.0" prefHeight="75.0" prefWidth="5.0" style="-fx-background-color: #4f79ff; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+                    <effect>
+                        <DropShadow />
+                    </effect></Pane>
+                <Pane fx:id="line_statistics" layoutX="295.0" layoutY="495.0" prefHeight="75.0" prefWidth="5.0" style="-fx-background-color: #4f79ff; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+                    <effect>
+                        <DropShadow />
+                    </effect></Pane>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane layoutX="325.0" layoutY="200.0" prefHeight="600.0" prefWidth="1200.0" styleClass="name_of_app" stylesheets="@../style.css">
+            <children>
+                <StackPane fx:id="ContentArea" prefHeight="600.0" prefWidth="1200.0" />
+            </children>
+         <effect>
+            <DropShadow />
+         </effect>
+        </AnchorPane>
+        <Pane layoutX="450.0" layoutY="-140.0" prefHeight="240.0" prefWidth="424.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+        <Pane layoutX="625.0" layoutY="35.0" prefHeight="150.0" prefWidth="600.0" styleClass="name_of_app" stylesheets="@../style.css">
+            <children>
+                <Label layoutX="46.0" layoutY="52.0" text="Covid-19 vaccination system" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="36.0" />
+                    </font>
+                </Label>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
+        <Pane layoutX="50.0" layoutY="10.0" prefHeight="175.0" prefWidth="200.0" styleClass="name_of_app" stylesheets="@../style.css">
+            <children>
+                <Circle layoutX="100.0" layoutY="75.0" radius="70.0" stroke="BLACK" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.20392157137393951" green="0.8784313797950745" blue="0.38823530077934265" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Circle>
+                <ImageView fx:id="user_image" fitHeight="100.0" fitWidth="90.0" layoutX="55.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../images/profile.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="citizen_name" alignment="CENTER" layoutY="145.0" prefHeight="20.0" prefWidth="200.0" text="Humoyun Saydullayev" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
+      <Pane fx:id="main_page" layoutX="1472.0" layoutY="21.0" prefHeight="60.0" prefWidth="60.0" styleClass="admin_most_inner_pane" stylesheets="@../style.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/home.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+    </children>
+</AnchorPane>
